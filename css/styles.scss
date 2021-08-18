@@ -1,0 +1,14 @@
+@import "inc/var";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+// global
+
+@import "./inc/global";
+
+// home page
+@import "inc/desktop";

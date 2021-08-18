@@ -1,0 +1,224 @@
+/*1. Animate css, 2. Smartmenus css, 3. Slick css, 4. Reset css, 5. Core css, 6. custom css*/
+/* =================animate css starts here================= */
+.animated{-webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both;}
+@-webkit-keyframes fadeIn{from{opacity: 0;}to{opacity: 1;}}
+@keyframes fadeIn{from{opacity: 0;}to{opacity: 1;}}
+.fadeIn{-webkit-animation-name:fadeIn; animation-name: fadeIn;}
+@-webkit-keyframes fadeInUp{from{opacity: 0;-webkit-transform: translate3d(0, 30px, 0);transform: translate3d(0, 30px, 0);} to{opacity: 1; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0);}}
+@keyframes fadeInUp{from{opacity: 0; -webkit-transform: translate3d(0, 30px, 0); transform: translate3d(0, 30px, 0);} to{opacity: 1; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0);}}
+.fadeInUp{-webkit-animation-name: fadeInUp;animation-name: fadeInUp;}
+/* =================animate css ends here================= */
+/* =================reset css starts here=================  */
+* { margin: 0; padding: 0; }
+h1, h2, h3, h4, h5, h6, p, ul, li, body, html, form, fieldset { margin: 0; padding: 0; outline: none; border: 0 }
+a { text-decoration: none; border: 0; outline: 0; }
+ul {list-style: none;}
+a:focus, input:focus, textarea:focus, *:focus { outline: 0 !important; }
+/* =================reset css ends here================= */
+/* =================core css starts here================= */
+body { padding-top:0px; font-size: 16px; line-height: 24px; font-weight: 400;font-family: 'Poppins', sans-serif;color: #000; background: #fef3d9; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.container { width: 100%; max-width: 1260px; } 
+a, input, button { display: inline-block; text-decoration: none; color: inherit; outline: none; transition: all 0.2s ease-in;  -webkit-transition: all 0.2s ease-in; }
+a img {border: 0px none;}
+a:hover { outline: none; color: #6a4973; text-decoration: none; }
+a:active { outline: none; text-decoration: none; }
+a:focus { outline: none; outline-offset: 0px; text-decoration: none; color: inherit; }
+::-webkit-input-placeholder { color: #000; opacity: 0.5; }
+::-moz-placeholder { color: #000; opacity: 0.5; }
+:-moz-placeholder { color: #000; opacity: 0.5; }
+:-ms-input-placeholder { color: #000; opacity: 0.5; }
+.os-animation {opacity: 0;}
+.os-animation.animated {opacity: 1;}
+img {max-width: 100%; border:0; height: auto;}
+h1, h2, h3, h4, h5, h6 { margin: 0px; padding: 0px; margin-bottom: 24px; line-height: 1.2; font-weight: 700; color: inherit;}
+h1 {font-size: 58px;}
+h2 {font-size: 48px;}
+h3 {font-size: 40px;}
+h4 {font-size: 30px;}
+h5 {font-size: 26px;}
+h6 {font-size: 22px;}
+p {margin: 0px; padding: 0px; margin-bottom: 24px; }
+strong {font-weight: 700;}
+b {font-weight: 400;}
+p:last-child {margin-bottom: 0;}
+.btn {border-radius:26px;font-weight: 700;padding:15px;min-width:100%;font-size: 14px;line-height: 20px;letter-spacing: 1px; box-shadow: none; transition: all 0.2s ease-in;-webkit-transition: all 0.2s ease-in;}
+.btn-default,.btn-default:focus { color: #fff; background-color: #6a4973; border: solid 1px #6a4973;     box-shadow: none;}
+.btn-default:hover,.btn-default:active { color:#fff; background-color:#F0C665; border-color: #F0C665; }
+.btn-primary,.btn-primary:focus { color: #fff; background-color: #333; border: solid 1px #333;     box-shadow: none;}
+.btn-primary:hover,.btn-primary:active { color: #333; background-color: transparent; border-color: #333; }
+.btn.btn-block{min-width: 100%;}
+.btn+.btn {margin-left: 25px;}
+ul:not([class]) {list-style: none;margin-bottom: 15px;text-align:left;line-height: 22px;}
+ul:not([class]) > li {padding-left: 16px;position: relative;margin-bottom: 14px;}
+ul:not([class]) > li:last-child{margin-bottom: 0;}
+ul:not([class]) > li:before {content: '';position: absolute;left: 2px;top:10px;background: #000;height: 5px;width: 5px; border-radius: 50%;}
+.grey-bg{background: #f5f5f5;}
+/* =================core css ends here================= */
+
+/* ================= Content Start ================= */
+.content-container{padding: 60px 0;} 
+/* ================= Content End ================= */
+
+
+/*-------logo--------*/
+.content-container.logo-container {padding: 90px 0 45px 0;}
+.logo-box .logo{width:181px;margin-bottom:35px;}
+.logo-box .logo img{width:100%;height:100%;object-fit:cover;}
+.logo-box p{max-width:660px;margin:0 auto;font-size: 18px; line-height:20px;color:#6A4973; text-align:center;}
+.logo-box a{font-weight:700;}
+/* ================= Login Start ================= */
+.account-box-right{width:545px;}
+.account-img{width:100%;height: 100%;}
+.account-img img{width:100%;height:100%;object-fit:cover;}
+.account-box-left{width:calc(100% - 545px);padding: 150px 85px 85px 85px;background:#fff;}
+.account-box-left .form-group{margin-bottom:20px;}
+.account-box-left form{width:100%;}
+.account-box-left input.form-control{height:66px;box-shadow:none;border-radius:9px;font-size:16px;font-weight:bold;color:#949494; background:#FFFFFF; border:1px solid #C8C8C8;text-align: center;}
+.account-box-left form ::placeholder{font-size:16px;line-height:20px;color:#949494;font-weight:bold;text-align: center;}
+.account-box-left label{margin-bottom:0;}
+.account-box-left input[type=checkbox],input[type=radio]{margin-right:20px;}
+.account-wrapper span.accounthave{color:#F0C665;font-weight: 700;}
+.account-box-left .form-group{margin-bottom:15px;font-size:16px;line-height:20px;font-weight:700;color:#949494;}
+.account-wrapper{padding:40px 0 20px;}
+.account-wrapper a{color:#4D4D4D;}
+.form-group.form-remember{padding:25px 0;}
+/*---chechbox--*/
+.form-group.form-remember input{padding:0;height:initial;width:initial;margin-bottom:0;display:none;cursor:pointer;}
+.form-group.form-remember label{position:relative;cursor:pointer;}
+.form-group.form-remember label:before{content:'';-webkit-appearance:none;background-color:#eeeeee;border:0;box-shadow:none;padding:11px;border-radius:50%;display:inline-block;position:relative;vertical-align:middle;cursor:pointer;margin-right:15px;}
+.form-group.form-remember input:checked + label:after{content:'';display:block;position:absolute;top:5px;left:9px;width:6px;height:12px;border:solid #6a4973;border-width:0 2px 2px 0;transform:rotate(45deg);}
+.form-group.form-remember .rp-custom a{position:relative;}
+.form-group.form-remember .rp-custom a:hover:before{content:'';position:absolute;top:0;left:-40px;width:22px;height:22px;background:#F0C665;border:2px solid #4D4D4D;border-radius:50%;}
+
+/*----recover password----*/
+.recover-password .form-group{margin-bottom:38px;}
+.recover-password .account-wrapper{padding:55px 0 20px;}
+.recover-password p{font-size:16px;line-height:22px;font-weight:400;color:#4D4D4D;margin-bottom:42px;}
+.account-box-left h5{font-size:22px;line-height:26px;color:#6A4973;font-weight:bold;text-align:center;}
+.wm-desc p{font-size:18px;line-height: 24px; color:#6A4973;margin-bottom: 0;letter-spacing: -0.4px;}
+.wm-img{width:125px;margin:0 auto 40px;}
+.wm-img img{width:100%;height:100%;object-fit:cover;}
+
+
+/*---Registration---*/
+.account-box.registration .account-box-left{position:relative;padding:50px 70px 30px 70px;}
+.account-box.registration .account-box-left .form-group{margin-bottom:18px;}
+.account-box.registration .account-box-left label{margin-bottom:10px; font-weight: 700; line-height: 19px;}
+.account-box.registration input.form-control{height: 51px;border-radius: 4px; text-align:left;background:#f5f5f5;border:0;}
+.account-box.registration .form-group.form-remember{padding:10px 0px 15px 0;}
+.account-box.registration .account-wrapper{padding:0px 0 20px;}
+.account-box.registration .form-group.form-remember label{margin-bottom:0;font-size:12px;letter-spacing:0px;font-weight:400;line-height:12px;color:#4d4d4d;}
+.account-box.registration .form-group.form-remember label:before{border-radius:0;background: transparent; border:2px solid #cacaca;}
+.account-box.registration .account-wrapper .btn{min-width:235px;color:#fff;}
+.account-box.registration .account-wrapper .btn:hover{min-width:235px;}
+.account-box.registration select.form-control{height:50px;box-shadow:none;border-radius:30px;font-size:16px;color:#949494;border:2px solid #e3e3e3;padding:10px 25px 10px 35px;background:#f5f5f5;font-weight:600;box-shadow:none;}
+.account-box.registration .ageValue input.form-control { height: 50px; width: 73px; }
+.calender-icon { width: 36px; position: absolute; top: 35px; right: -35px; }
+.calender-icon img { width: 100%; height: 100%; object-fit: cover; }
+.ageValue { width: calc(100% - 36px); padding-right: 15px; }
+.account-box.registration .getValue{ position: relative;margin-bottom:15px;}
+
+.account-box.registration select.form-control{background-repeat:no-repeat;-webkit-appearance:none;-moz-appearance:none;}
+.account-box.registration .getValue i{float:right;margin-top:-28px;margin-right:25px;font-size:14px;}
+
+
+
+/*------privacy-policy-------*/
+.privacy-policy-box{margin-bottom:100px;}
+.pp-heading{margin-bottom:46px;}
+.pp-heading h3{font-size:40px;line-height:45px;color:#6A4973;font-weight:400;margin:0;font-family:CenturyGothic-Bold;}
+.pp-content{max-width:1455px;margin:0 auto;background:#fff;padding:115px;}
+.pp-content p{font-size:25px;line-height:40px;color:#2D2D2D;margin-bottom:40px;}
+.pp-content p:last-child{margin-bottom:0;}
+
+
+@media (max-width: 1399.98px){
+.account-box.registration input.form-control{height:45px;}
+.account-box.registration select.form-control{height:45px;}
+.account-box.registration .ageValue input.form-control{height:45px;}
+.calender-icon{width:30px;}
+.account-box-left input.form-control{height:50px;}
+.account-box-left  .btn{padding:10px 15px;}
+
+/*------privacy-policy-------*/
+.privacy-policy-box{margin-bottom:80px;}
+.pp-content{max-width: 990px;padding: 40px 40px 80px;}
+.pp-content p{font-size:18px;line-height:24px;}
+
+
+}
+
+
+
+/* ========================================== 
+! Large devices (desktops, less than 1200px)
+=========================================== */
+@media (max-width: 1199.98px){
+/*---------Registration----------*/
+.account-box.registration .account-box-left{width:100%;padding: 60px;}
+.account-box.registration .account-box-right{width:100%;}
+
+.account-box-left{width:50%;padding:40px;}
+.account-box-right{width:50%;}
+.account-box-left .rp-custom + .rp-custom{margin-top:20px;margin-left: 40px;}
+
+}
+/*==========================================
+! Medium devices (tablets, less than 992px)
+========================================== */
+@media (max-width: 991.98px){
+.recover-password .account-wrapper{padding:28px 20px;}
+}
+
+/* =================================================  
+ ! Small devices (landscape phones, less than 768px)
+ ================================================= */
+@media (max-width: 767.98px){
+
+.logo-box p{font-size:16px;}
+.calender-icon{right:auto;left:90px;}
+/*---------Registration----------*/
+
+.account-box-left{width:100%;padding:100px 60px;}
+.account-box-right{width:100%;}
+.account-box.registration input.form-control{height:50px;}
+.account-box-left input.form-control{height:50px;}
+.account-box.registration .getValue{margin-bottom:15px;}
+.account-box.registration .account-btn{padding-top:40px;}
+
+.rp-custom span.rememberTurms{width:100%;display:block;margin-top:-28px;margin-left:38px;line-height:15px;    padding-right: 30px;}
+
+
+/*------privacy-policy-------*/
+.privacy-policy-box{margin-bottom:60px;}
+.pp-heading{margin-bottom:15px;}
+.pp-heading h3{font-size:26px;}
+.pp-content{max-width:990px;padding:20px 20px 40px;}
+.pp-content p{font-size:16px;text-align:justify;}
+
+
+
+}
+/* ======================================================
+ ! Extra small devices (portrait phones, less than 576px)
+ ====================================================== */
+@media (max-width: 575.98px){
+
+.account-wrapper { padding: 20px; }
+.recover-password .account-wrapper{padding:20px;}
+/*------Registration------*/
+.account-box.registration .account-box-left{width:100%;padding:30px 20px;}
+.account-box-left{width:100%;padding:80px 20px;}
+.account-box-left .form-group{font-size:14px;}
+.account-btn .btn{padding:11px 15px;}
+.account-box-left .rp-custom + .rp-custom{margin-top:10px;}
+.wm-desc p{font-size:16px;color:#6a4973;}
+.wm-img{width:90px;margin:0 auto 25px;}
+
+}
+
+ 
+
+
+
+
