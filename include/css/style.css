@@ -432,10 +432,12 @@ ul.team-list li.team-item{width:33.33%;padding:28px 15px;}
 .form-group.form-remember input{padding:0;height:initial;width:initial;margin-bottom:0;display:none;cursor:pointer;}
 .form-group.form-remember label{position:relative;cursor:pointer;}
 .form-group.form-remember label:before{content:'';-webkit-appearance:none;background-color:#eeeeee;border:0;box-shadow:none;padding:11px;border-radius:50%;display:inline-block;position:relative;vertical-align:middle;cursor:pointer;margin-right:15px;}
-.form-group.form-remember input:checked + label:after{content:'';display:block;position:absolute;top:4px;left:7px;width:6px;height:10px;border:solid #6a4973;border-width:0 2px 2px 0;transform:rotate(45deg);}
+.form-group.form-remember input:checked + label:after{content:'';display:block;position:absolute;top:5px;left:9px;width:6px;height:10px;border:solid #6a4973;border-width:0 2px 2px 0;transform:rotate(45deg);}
 .form-group.form-remember .rp-custom a{position:relative;}
 .form-group.form-remember .rp-custom a:before{content:'';position:absolute;top:0;left:-40px;width:22px;height:22px;background:#eeeeee;border-radius:50%;}
 .form-group.form-remember .rp-custom a:active:before{content:'';position:absolute;top:0;left:-40px;width:22px;height:22px;background:#F0C665;border:2px solid #4D4D4D;border-radius:50%;}
+.form-group.form-remember.main-check input:checked + label:after{content:'';display:block;position:absolute;top:7px;left:10px;width:6px;height:10px;border:solid #6a4973;border-width:0 2px 2px 0;transform:rotate(45deg);}
+
 
 /*----recover password----*/
 .recover-password .form-group{margin-bottom:38px;}
@@ -564,6 +566,9 @@ ul.policy-list li a:hover{color: var(--yellow);}
 .our-story-box{text-align:center;padding:80px 30px;border-radius:16px;}
 .our-story-box p{font-size:17px;line-height:32px;color:var(--white);margin-bottom:0;}
 .our-story-box .storyquotes{padding:35px 0px;}
+
+.form-group.form-remember.main-check input:checked + label:after{content:'';display:block;position:absolute;top:4px;left:7px;width:6px;height:10px;border:solid #6a4973;border-width:0 2px 2px 0;transform:rotate(45deg);}
+
 
 }
 
@@ -708,6 +713,8 @@ a.form-recovery{padding-left:35px;}
 .footer-upper .search-box{margin-bottom:20px;position:relative;top:auto;left:auto;transform:none;font-size:12px;line-height:18px;}
 ul.policy-list{justify-content:center;}
 
+
+.form-group.form-remember input:checked + label:after{content:'';display:block;position:absolute;top:5px;left:7px;width:5px;height:9px;border:solid #6a4973;border-width:0 2px 2px 0;transform:rotate(45deg);}
 }
 /* =================================================  
  ! Small devices (landscape phones, less than 768px)
